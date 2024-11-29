@@ -36,3 +36,10 @@ class TestSearch:
         assert search.text1() != check
 if __name__ == '__main__':
     pytest.main(['TestCase/test_search.py'])
+
+os.system('allure generate -c -o report temps')
+#generate表示生成报告
+#-c表示清空之前的报告
+#-o表示报告存放的目录名字（后面的report是我设置的目录名字）
+#temps表示allure-pytest插件生成的测试结果存放的位置（名字可以自己更换）
+
